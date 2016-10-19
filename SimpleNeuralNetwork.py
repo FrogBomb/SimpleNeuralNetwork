@@ -140,7 +140,7 @@ class NeuronLayer:
                     through the data based on the activation function.
 
         """
-        if reinforcement == None:
+        if type(reinforcement) == type(None):
             #Check if None
             return self._unsupervisedTrain(inArr, learnRate)
         else:
